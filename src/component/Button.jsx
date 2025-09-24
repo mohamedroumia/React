@@ -3,7 +3,7 @@ export function Button ({title, onClick}){
     
     return (
         <>
-        <button onClick={onClick}>{title}</button>
+        <button name={title} onClick={onClick}>{title}</button>
         </>
     )
 }

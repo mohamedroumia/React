@@ -1,17 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "./Button";
 
-export function Counter() {
-    const [counter, setCounter] = useState(0);
+export function Counter({initialValue = 0}) {
+    const [counter, setCounter] = useState(initialValue);
+
+    // useEffect (() => {
+    //     console.log("the value of counter is " + counter);
+    //     return () => {
+    //         console.log("the value of counter was " + counter);
+    //     }
+    // },[counter])
 
     function handleIncrementCounter() {
-        setCounter(counter +1)
+        setCounter((c) => c + 1)
     }
     function handleDecrementCounter() {
-        setCounter(counter -1)
+        setCounter((c) => c - 1)
     }
     function handleResetCounter() {
-        setCounter(0)
+        setCounter(initialValue)
     }
     return (
         <>
