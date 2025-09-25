@@ -1,0 +1,17 @@
+.myApp {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+h2 {
+  color: #444;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}

@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import { Home } from "./Home";
 import { AlertClock } from "./component/AlertClock";
+import { Home } from "./component/Home";
 import { Welcome } from "./component/Welcome";
 import "./index.css";
 

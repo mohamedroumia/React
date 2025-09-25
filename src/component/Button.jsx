@@ -1,9 +1,13 @@
-export function Button ({title, onClick}){
-
-    
-    return (
-        <>
-        <button onClick={onClick}>{title}</button>
-        </>
-    )
+export function Button({ title, onClick }) {
+  return (
+    <>
+      <a
+        className="inline-block rounded-sm bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:ring-3 focus:outline-hidden"
+        onClick={onClick}
+        href="#"
+      >
+        {title}
+      </a>
+    </>
+  );
 }
